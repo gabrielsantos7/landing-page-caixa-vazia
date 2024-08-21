@@ -1,6 +1,6 @@
 export function Hero() {
   return (
-    <section className="px-0 md:px-8 flex items-center h-[calc(100vh-200px)] text-neutral-100 bg-[url('https://i.ibb.co/yNHZ6Yh/hero.png')] bg-cover bg-center">
+    <section className="px-0 md:px-8 flex items-center h-screen text-neutral-100 bg-[url('https://i.ibb.co/yNHZ6Yh/hero.png')] bg-cover bg-center">
       <div className="container">
         <h2 className="text-2xl md:text-6xl font-semibold md:text-bold">
           Simplifique a Gestão de Licitações e Tarefas em Equipe

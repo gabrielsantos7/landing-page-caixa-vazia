@@ -5,7 +5,7 @@ export function About() {
       className="bg-neutral-900 flex flex-col-reverse md:flex-row items-center justify-between text-neutral-100 overflow-hidden"
     >
       <div>
-        <p className="px-4 py-8 md:px-20  font-light md:text-lg">
+        <p className="px-4 py-8 md:px-20 font-light md:text-lg">
           O Projeto Caixa Vazia foi pensado e desenvolvido para atender as
           necessidades de gestão de licitações e tarefas em ambientes
           corporativos e governamentais. Nossa missão é facilitar o
@@ -16,11 +16,14 @@ export function About() {
           coordenada.
         </p>
       </div>
-      <img
-        src="https://i.ibb.co/Pm6wCKp/building.png"
-        alt="Prédio"
-        className="hover:scale-110 hover: duration-500"
-      />
+      <div className="overflow-hidden flex-shrink-0">
+        <img
+          src="https://i.ibb.co/Pm6wCKp/building.png"
+          alt="Prédio"
+          className="transform transition-transform duration-500 hover:scale-110 object-cover"
+          style={{ transformOrigin: 'center' }}
+        />
+      </div>
     </section>
   );
 }
