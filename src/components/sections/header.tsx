@@ -8,12 +8,12 @@ export function Header() {
   };
 
   return (
-    <header className="p-6 flex justify-between items-center bg-gradient-to-b from-black/50 to-transparent fixed top-0 w-full h-32 z-50">
+    <header className="flex justify-between items-center bg-gradient-to-b from-black/50 to-transparent fixed top-0 w-full h-20 z-50">
       <a href="#">
         <img
           src="https://i.ibb.co/WkBGzgB/logo.png"
           alt="Logo Caixa Vazia"
-          className="w-16 md:w-24"
+          className="w-16 md:w-20 absolute top-4 left-6"
         />
       </a>
       <div className="sm:hidden">
@@ -31,7 +31,7 @@ export function Header() {
       <ul
         className={`${
           isOpen ? 'block' : 'hidden'
-        }  bg-white absolute top-20 right-6 rounded-lg shadow-lg p-6 sm:p-0 sm:top-14 sm:flex sm:items-center sm:gap-6 sm:bg-transparent sm:shadow-none sm:text-neutral-100`}
+        }  bg-white absolute top-16 right-6 rounded-lg shadow-lg p-6 sm:p-0 sm:top-4 sm:flex sm:items-center sm:gap-6 sm:bg-transparent sm:shadow-none sm:text-neutral-100`}
       >
         <li className="my-2 sm:my-0">
           <a href="#" className="hover:underline" onClick={toggleMenu}>
