@@ -2,6 +2,8 @@ import { motion, useAnimation } from "framer-motion";
 import { useEffect } from "react";
 import { useInView } from "react-intersection-observer";
 
+import Building from '/building.png';
+
 export function About() {
   const controls = useAnimation();
   const { ref, inView } = useInView({
@@ -62,7 +64,7 @@ export function About() {
         transition={{ duration: 1, ease: "easeOut" }}
       >
         <motion.img
-          src="https://i.ibb.co/Pm6wCKp/building.png"
+          src={Building}
           alt="Prédio"
           className="transform transition-transform duration-500 hover:scale-110 object-cover"
           style={{ transformOrigin: "center" }}
