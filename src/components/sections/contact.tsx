@@ -49,15 +49,37 @@ export function Contact() {
   });
 
   function onSubmit(values: z.infer<typeof formSchema>) {
-    toast({
-      title: "Mensagem enviada com sucesso!",
-      description: (
-        <p>
-          Obrigado por entrar em contato! Responderemos o mais breve possível.
-        </p>
-      ),
+    fetch(import.meta.env.VITE_API_URL, {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+        Authorization: `Bearer ${import.meta.env.VITE_API_TOKEN}`,
+      },
+      body: JSON.stringify({
+        Nome: values.firstName,
+        Sobrenome: values.lastName,
+        "E-mail": values.email,
+        Telefone: values.phone,
+        Mensagem: values.message,
+      }),
+    }).then((response) => {
+      if (response.ok) {
+        toast({
+          title: "Mensagem enviada com sucesso!",
+          description: (
+            <p>
+              Obrigado por entrar em contato! Responderemos o mais breve
+              possível.
+            </p>
+          ),
+        });
+      } else {
+        toast({
+          title: "Ocorreu um erro ao enviar a mensagem",
+          description: "Por favor, tente novamente mais tarde.",
+        });
+      }
     });
-    console.log(values);
     form.reset();
   }
 
