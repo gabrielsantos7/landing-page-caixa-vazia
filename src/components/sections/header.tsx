@@ -24,9 +24,9 @@ export function Header() {
           className="flex items-center px-3 py-2 rounded-md"
         >
           <div>
-            <div className="bg-white h-0.5 w-5 rounded"></div>
-            <div className="bg-white h-0.5 w-5 rounded my-1"></div>
-            <div className="bg-white h-0.5 w-5 rounded"></div>
+            <div className="bg-white h-0.5 w-5 rounded" />
+            <div className="bg-white h-0.5 w-5 rounded my-1" />
+            <div className="bg-white h-0.5 w-5 rounded" />
           </div>
         </button>
       </div>
@@ -57,7 +57,7 @@ export function Header() {
         </li>
         <li className="mt-4 sm:mt-0">
           <a
-            href="#"
+            href="https://projeto-caixa-vazia.onrender.com"
             className="py-2 px-6 rounded-full ring-2 ring-neutral-100 hover:text-neutral-800 hover:bg-neutral-100 duration-500"
             onClick={toggleMenu}
           >

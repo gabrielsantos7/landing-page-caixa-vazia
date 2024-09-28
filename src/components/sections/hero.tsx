@@ -32,7 +32,7 @@ export function Hero() {
         </motion.p>
 
         <motion.a
-          href="#"
+          href="https://projeto-caixa-vazia.onrender.com"
           className="py-3 px-8 rounded-full bg-neutral-50 text-neutral-800 hover:bg-neutral-300 duration-300"
           initial={{ opacity: 0, scale: 0.8 }}
           animate={{ opacity: 1, scale: 1 }}
