@@ -126,19 +126,19 @@ export function Contact() {
                       <FormLabel>
                         {field.name === "firstName" ? "Nome" : "Sobrenome"}
                       </FormLabel>
-                      <FormControl>
-                        <motion.div
-                          whileFocus={{ scale: 1.05 }}
-                          transition={{ type: "spring", stiffness: 300 }}
-                        >
+                      <motion.div
+                        whileFocus={{ scale: 1.05 }}
+                        transition={{ type: "spring", stiffness: 300 }}
+                      >
+                        <FormControl>
                           <Input
                             placeholder={`Informe seu ${
                               field.name === "firstName" ? "nome" : "sobrenome"
                             }...`}
                             {...field}
                           />
-                        </motion.div>
-                      </FormControl>
+                        </FormControl>
+                      </motion.div>
                       <FormMessage />
                     </FormItem>
                   )}
@@ -156,19 +156,19 @@ export function Contact() {
                       <FormLabel>
                         {field.name === "email" ? "E-mail" : "Telefone"}
                       </FormLabel>
-                      <FormControl>
-                        <motion.div
-                          whileFocus={{ scale: 1.05 }}
-                          transition={{ type: "spring", stiffness: 300 }}
-                        >
+                      <motion.div
+                        whileFocus={{ scale: 1.05 }}
+                        transition={{ type: "spring", stiffness: 300 }}
+                      >
+                        <FormControl>
                           <Input
                             placeholder={`Informe seu ${
                               field.name === "email" ? "e-mail" : "telefone"
                             }...`}
                             {...field}
                           />
-                        </motion.div>
-                      </FormControl>
+                        </FormControl>
+                      </motion.div>
                       <FormMessage />
                     </FormItem>
                   )}
@@ -181,14 +181,14 @@ export function Contact() {
               render={({ field }) => (
                 <FormItem>
                   <FormLabel>Mensagem</FormLabel>
-                  <FormControl>
-                    <motion.div
-                      whileFocus={{ scale: 1.05 }}
-                      transition={{ type: "spring", stiffness: 300 }}
-                    >
+                  <motion.div
+                    whileFocus={{ scale: 1.05 }}
+                    transition={{ type: "spring", stiffness: 300 }}
+                  >
+                    <FormControl>
                       <Textarea placeholder="Sua mensagem..." {...field} />
-                    </motion.div>
-                  </FormControl>
+                    </FormControl>
+                  </motion.div>
                   <FormMessage />
                 </FormItem>
               )}
